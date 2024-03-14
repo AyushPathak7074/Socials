@@ -10,7 +10,7 @@ Authentication:
 Implemented JWT-based authentication to secure the API. It ensures that user can sign up, log in, and perform actions on behalf of their profiles.
 
 ## 🚀Deployment
-To Run this API:
+To Run this API:https://socials-nx4t.onrender.com
 
 ## 💻Run Locally
 
