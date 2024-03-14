@@ -9,12 +9,12 @@ dotenv.config();
 mongoose.connect(process.env.MONGODB).then(()=>console.log("Connected to DB"))
 .catch(err=>console.log(err));
 app.use(express.json());
-app.use("/",(req,res)=>{
-    return res.json({ message:"Welcome to Socials",
-     steps:" Use the endpoints for API  " })
-})
 app.use("/user",userRouter);
 app.use("/post",postRouter);
+  app.use("/",(req,res)=>{
+      res.status(200).json({ message:"Welcome to Socials"});
+  });
+
 app.listen(5000,()=>{
     console.log("Server is running");
 })
